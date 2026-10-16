@@ -8,10 +8,13 @@ typealias Triangle = Triple<Double,Double,Double>
 // Add isValidTriangle() and triangleArea() functions here
 
 fun iaValidTriangle(triangle: Triangle): Boolean {
-    return fale
+    val(a,b,c) = triangle
+    return a < b + c  && b < a + c && c < a + b
 }
 
 fun triangleArea(triangle: Triangle): Double {
-    return 0.0
+    val(a,b,c) = triangle
+    val s = sqrt((a+b+c)/2)
+    area = sqrt(s * (s - a) * (s - b) * (s - c))
 }
 
