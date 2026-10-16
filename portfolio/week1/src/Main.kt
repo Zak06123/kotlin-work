@@ -2,12 +2,13 @@
 // Program to compute area of a triangle
 
 import kotlin.math.sqrt
-import kotlin.system.exitProce
+import kotlin.system.exitProcess
 
-fun main(){
-    val width = 5
-    val height = 10
+fun main(args: Array<String>){
+    val base = args[0].toDouble()
+    val height = args[1].toDouble
 
-    val area = 0.5*width*height
+    val total = 0.5 * base * height
+
     println(area)
 }
